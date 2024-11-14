@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poverty Facts</title>
+    <title>Facts about Poverty</title>
     <style>
         body {
             background-color: #E9972D;
@@ -19,7 +19,7 @@
             text-align: center;
         }
 
-        h1 {
+        .title {
             font-size: 3em;
             margin-bottom: 20px;
         }
@@ -40,6 +40,7 @@
         .fact p {
             font-size: 1.2em;
             line-height: 1.5;
+            margin-bottom: 20px; 
         }
 
         a {
@@ -49,28 +50,87 @@
             text-decoration: underline; 
             font-size: 1.5em; 
         }
+
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 0; 
+            width: 100%; 
+            position: relative; 
+            left: 0;
+            right: 0;
+            text-align: center; 
+        }
+
+        footer p {
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+        }
+
+        nav {
+            display: flex; 
+            justify-content: center; 
+            margin-bottom: 20px; 
+        }
+
+        nav a {
+            margin: 0 15px; 
+        }
+
+        aside {
+            background-color: rgba(36, 34, 34, 0.6);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        aside h3 {
+            font-size: 1.2em;
+        }
+
+        aside p {
+            font-size: 1em;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <div class="title">Facts about Poverty</div>
+        <nav>
+            <a href="#global-prevalence">Global Prevalence</a>
+            <a href="#impact-education">Impact on Education</a>
+            <a href="#health-disparities">Health Disparities</a>
+        </nav>
+    </header>
+    
     <div class="container">
-        <h1>Facts About Poverty</h1>
-        
-        <div class="fact">
-            <h2>1. Global Prevalence</h2>
-            <p>As of 2021, approximately 689 million people, or 9.2% of the world's population, live on less than $1.90 a day, which is considered the international poverty line.</p>
-        </div>
+        <section>
+            <div class="fact" id="global-prevalence">
+                <h2>1. Global Prevalence</h2>
+                <p>As of 2021, approximately 689 million people, or 9.2% of the world's population, live on less than $1.90 a day, which is considered the international poverty line.</p>
+            </div>
 
-        <div class="fact">
-            <h2>2. Impact on Education</h2>
-            <p>Children from low-income families are less likely to attend school and complete their education. An estimated 258 million children and youth were out of school in 2018.</p>
-        </div>
+            <div class="fact" id="impact-education">
+                <h2>2. Impact on Education</h2>
+                <p>Children from low-income families are less likely to attend school and complete their education. An estimated 258 million children and youth were out of school in 2018.</p>
+            </div>
 
-        <div class="fact">
-            <h2>3. Health Disparities</h2>
-            <p>Poverty is closely linked to health outcomes. People living in poverty often have limited access to healthcare services, leading to higher rates of chronic diseases and lower life expectancy.</p>
-        </div>
+            <div class="fact" id="health-disparities">
+                <h2>3. Health Disparities</h2>
+                <p>Poverty is closely linked to health outcomes. People living in poverty often have limited access to healthcare services, leading to higher rates of chronic diseases and lower life expectancy.</p>
+            </div>
+        </section>
+
+        <aside>
+            <h3>Did You Know?</h3>
+            <p>Poverty affects people in every country, and it can have a lasting impact on generations.</p>
+        </aside>
 
         <a href="Breaking Bread.html">Back to Homepage</a> 
     </div>
+
+    <footer>
+        <p>&copy; 2024 Poverty Awareness Initiative</p>
+    </footer>
 </body>
 </html>
