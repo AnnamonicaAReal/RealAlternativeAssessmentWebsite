@@ -34,18 +34,26 @@
             padding: 15px; 
             background-color: #ffb158; 
             margin: 10px; 
-            transition: transform 0.3s, box-shadow 0.3s; 
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+            box-shadow: none; 
         }
 
         .box:hover {
+            background-color: #7B3F00; 
             transform: scale(1.05); 
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
         }
 
         a {
             text-decoration: none; 
             color: #945400; 
             font-weight: bold; 
+            display: block; 
+            transition: color 0.3s ease; 
+        }
+
+        .box:hover a {
+            color: white; 
         }
     </style>
 </head>
@@ -60,7 +68,7 @@
         </div>
         
         <div class="box" id="box3">
-            <a href="Fillings & Toppings (Facts).html">Fillings & Toppings (Facts)</a>
+            <a href="Filling & Toppings (Facts).html">Filling & Toppings (Fun Facts)</a>
         </div>
         
         <div class="box" id="box4">
