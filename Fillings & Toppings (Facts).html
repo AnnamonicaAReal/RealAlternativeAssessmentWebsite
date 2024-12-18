@@ -22,6 +22,12 @@
         .title {
             font-size: 3em;
             margin-bottom: 20px;
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+
+        .title:hover {
+            transform: scale(1.1);
         }
 
         .fact {
@@ -30,6 +36,12 @@
             padding: 20px;
             margin: 15px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .fact:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
 
         .fact h2 {
@@ -40,25 +52,30 @@
         .fact p {
             font-size: 1.2em;
             line-height: 1.5;
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
 
         a {
-            display: block; 
-            margin: 40px auto; 
-            color: #ffffff; 
-            text-decoration: underline; 
-            font-size: 1.5em; 
+            display: block;
+            margin: 40px auto;
+            color: #ffffff;
+            text-decoration: underline;
+            font-size: 1.5em;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ffddc1;
         }
 
         header, footer {
             background-color: rgba(0, 0, 0, 0.8);
-            padding: 15px 0; 
-            width: 100%; 
-            position: relative; 
+            padding: 15px 0;
+            width: 100%;
+            position: relative;
             left: 0;
             right: 0;
-            text-align: center; 
+            text-align: center;
         }
 
         footer p {
@@ -68,13 +85,46 @@
         }
 
         nav {
-            display: flex; 
-            justify-content: center; 
-            margin-bottom: 20px; 
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
         }
 
         nav a {
-            margin: 0 15px; 
+            margin: 0 15px;
+            position: relative;
+            padding-left: 25px;
+            text-decoration: none;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        nav a[href*="global-prevalence"] {
+            background: url('Sprite.png') no-repeat;
+            background-position: 0 0;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+        }
+
+        nav a[href*="impact-education"] {
+            background: url('Sprite.png') no-repeat;
+            background-position: 0 -20px;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+        }
+
+        nav a[href*="health-disparities"] {
+            background: url('Sprite.png') no-repeat;
+            background-position: 0 -40px;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
         }
 
         aside {
@@ -82,6 +132,12 @@
             border-radius: 10px;
             padding: 15px;
             margin: 20px 0;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        aside:hover {
+            background-color: rgba(36, 34, 34, 0.9);
+            transform: translateY(-5px);
         }
 
         aside h3 {
@@ -97,12 +153,14 @@
     <header>
         <div class="title">Facts about Poverty</div>
         <nav>
-            <a href="#global-prevalence">Global Prevalence</a>
-            <a href="#impact-education">Impact on Education</a>
-            <a href="#health-disparities">Health Disparities</a>
+            <div>
+                <a href="#global-prevalence" title="Global Prevalence"></a>
+                <a href="#impact-education" title="Impact on Education"></a>
+                <a href="#health-disparities" title="Health Disparities"></a>
+            </div>
         </nav>
     </header>
-    
+
     <div class="container">
         <section>
             <div class="fact" id="global-prevalence">
@@ -126,7 +184,7 @@
             <p>Poverty affects people in every country, and it can have a lasting impact on generations.</p>
         </aside>
 
-        <a href="Breaking Bread.html">Back to Homepage</a> 
+        <a href="Breaking Bread.html">Back to Homepage</a>
     </div>
 
     <footer>
