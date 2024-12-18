@@ -56,12 +56,30 @@
             text-decoration: underline; 
             font-size: 1.5em; 
         }
+
+        
+        .sprite {
+            width: 500px; 
+            height: 500px; 
+            background: url('Sprite.png') no-repeat;
+            margin: 20px auto;
+            animation: playSprite 1s steps(5) infinite; 
+        }
+
+        @keyframes playSprite {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -2000px 0; 
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Description</h1>
     <div class="content">
-        <img src="Description Poverty pic 1.jpg" alt="Poverty Image"> 
+        <div class="sprite"></div> 
         <p>Poverty is a grave issue that impacts many people around the world. It means that people around the world do not have enough money to meet even basic needs, like food, shelter, and clothing. When an individual is part of the poverty society, they usually struggle to access education and even healthcare. Poverty is not easy, but many people show creativity, great strength, and even perseverance to try to overcome these challenges. A community can make a difference by supporting and helping those in need to find resources and opportunities. By understanding poverty better, we can all work together to create a more fair world where everyone has a chance to succeed, not individually but together as a community.</p>
     </div>
 
