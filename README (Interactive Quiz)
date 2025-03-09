@@ -1,0 +1,41 @@
+# Interactive Quiz - README
+
+## Overview
+This interactive quiz is designed to test users on key knowledge areas related to poverty and its impact. It provides a multiple-choice format with a timer and visual feedback on correct and incorrect answers. The quiz is integrated into a web page and styled with CSS for an engaging user experience.
+
+## Features
+- **Timed Questions:** Each question has a 30-second countdown.
+- **Visual Feedback:** Correct answers turn green, incorrect answers turn red, and the correct answer is highlighted.
+- **Navigation Buttons:** Users can retake the quiz or return to the homepage after completion.
+- **Hover Effects:** Answer buttons change color and slightly pop up when hovered over.
+
+## How It Works
+1. The quiz begins automatically when the page loads.
+2. Users select an answer from four options.
+3. If the selected answer is correct, the button turns **green**.
+4. If the selected answer is incorrect, it turns **red**, and the correct answer is also highlighted in **green**.
+5. If the timer runs out, the quiz stops and displays a message that time is up.
+6. After answering all questions, the quiz displays the final score along with a custom message:
+   - **"WOOWW!! NICE JOBBB!!! <3"** for scores of 4 and above.
+   - **"Nice Try! I appreciate your effort!"** for scores of 3 and below.
+7. Users can either **retake the quiz** or **return to the homepage** via provided buttons.
+
+## Integration
+- The quiz is integrated within an HTML file and is styled using a separate CSS file.
+- JavaScript handles the quiz logic, including question progression, timing, and visual effects.
+- The "Back to Homepage" button directs users to `Breaking Bread.html` when clicked.
+
+## File Structure
+- `index.html` – The main webpage containing the quiz.
+- `styles.css` – Styles for the quiz interface.
+- `script.js` – JavaScript file containing quiz functionality.
+- `Breaking Bread.html` – The homepage linked at the end of the quiz.
+
+## How to Use
+1. Open `index.html` in a browser.
+2. Answer all quiz questions.
+3. View your results and choose to either retake the quiz or return to the homepage.
+
+---
+For any modifications or enhancements, update the `script.js` and `styles.css` files accordingly.
+
