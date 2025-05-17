@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Campaign to End Poverty - Sign Up</title>
+    <link rel="stylesheet" href="Project CSS.css" />
+    <script src="Project JS.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>🧡 Campaign to End Poverty</h1>
+        <p class="tagline">Join us in our mission to create a poverty-free world for everyone.</p>
+    </header>
+    <main>
+        <section class="form-container">
+            <form id="signupForm">
+                <label>
+                    First Name* 
+                    <input type="text" id="firstName" />
+                    <span class="required">Required</span>
+                </label>
+
+                <label>
+                    Last Name* 
+                    <input type="text" id="lastName" />
+                    <span class="required">Required</span>
+                </label>
+
+                <label>Sex* <span class="required sex-error">Required</span></label>
+                <div class="sex-options">
+                    <label><input type="radio" name="sex" value="Male" /> Male</label>
+                    <label><input type="radio" name="sex" value="Female" /> Female</label>
+                    <label><input type="radio" name="sex" value="Prefer not to say" /> Prefer not to say</label>
+                </div>
+
+                <label>
+                    Email Address* 
+                    <input type="email" id="email" />
+                    <span class="required">Required</span>
+                </label>
+
+                <label>
+                    Password* 
+                    <input type="password" id="password" />
+                    <span class="required">Required</span>
+                </label>
+
+                <label>
+                    Contact Number 
+                    <input type="text" id="contact" />
+                </label>
+
+                <label>
+                    Why you're supporting our campaign* 
+                    <textarea id="reason"></textarea>
+                    <span class="required">Required</span>
+                </label>
+
+                <button type="submit">Join the Campaign</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

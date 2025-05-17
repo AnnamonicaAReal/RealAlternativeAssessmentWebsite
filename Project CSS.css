@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.tagline {
+    font-style: italic;
+}
+
+.form-container, .profile-container {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.required {
+    display: none;
+    color: red;
+    margin-left: 0.5rem;
+}
+
+.sex-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.25rem;
+}
+
+.sex-options label {
+    margin-top: 0.25rem;
+}
+
+.sex-error {
+    display: none;
+    color: red;
+    margin-left: 0.5rem;
+}
